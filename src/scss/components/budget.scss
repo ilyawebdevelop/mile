@@ -1,0 +1,70 @@
+.budget {
+  padding-top: 5rem;
+  @media(max-width: 991px){
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+  }
+  .sectionHead {
+    .h2 {
+      @media(max-width: 767px){
+       text-align: center; 
+      }
+    }
+  }
+  &Item {
+    @media(max-width: 991px){
+      margin-bottom: 7.5rem;
+    }
+  }
+  &List {
+    li {
+      padding-left: 4rem;
+      background: url('@img/icons/check.svg') no-repeat left top 2px;
+      &:not(:last-child){
+        margin-bottom: .6rem;
+      }
+      span {
+        font-weight: 300;
+        display: block;
+      }
+    }
+  }
+  &Img {
+    border-radius: 2rem;
+    width: 100%;    
+    max-height: 41rem;
+    object-fit: cover;
+    @media(max-width: 991px){
+      margin-bottom: 2.5rem;
+      max-height: 60vw;
+    }
+  }
+  .blockTitle{
+    margin-bottom: 2.2rem;
+    span {
+      padding-bottom: 5px;
+      background: url('@img/icons/block-title.svg') no-repeat bottom center;
+      &.line-long {
+        background: url('@img/icons/block-title-long.svg') no-repeat bottom center;
+      }
+    }
+  }
+  &Row {
+    margin-bottom: 5rem;
+    @media(max-width: 991px){
+      margin-bottom: 0;
+    }
+  }
+  .image-right {
+    padding-left: 2.5rem;
+    @media(max-width: 991px){
+      padding-left: 0;
+    }
+  }
+  .image-left {
+    padding-right: 2.5rem;
+    @media(max-width: 991px){
+      padding-right: 0;
+    }
+  }
+}

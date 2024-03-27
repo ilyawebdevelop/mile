@@ -1,0 +1,74 @@
+.calc {
+  background-color: #0E1316;
+  @media(max-width: 991px){
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+  .sectionHead {
+    @media(max-width: 767px){
+      margin-bottom: 4rem;
+    }
+  }
+
+  &Title {
+    max-width: 61rem;
+    @media(max-width: 767px){
+      text-align: center;
+    }
+    span {
+      @media(max-width: 767px){
+        display: none;
+      }
+    }
+  }
+
+  &Form {
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    @media(max-width: 575px){
+      padding: 5rem 1.8rem 3.5rem;
+    }
+    .formInput {
+      border: 1px solid #FFCC34;
+    }
+    .formSelect {
+      border: 1px solid #FFCC34;     
+    }
+  }
+
+  &Total {
+    background-color: #F2F2F2;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 3.2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .inputName {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      text-align: center;
+      margin-bottom: 4px;
+      color: #040404;
+    }
+
+    &Price {
+      color: #0E1316;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  .inputW {
+    margin-bottom: 0;
+    @media(max-width: 991px){
+      margin-bottom: 3.5rem;
+    }
+  }
+}

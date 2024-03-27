@@ -1,0 +1,297 @@
+// Header
+.header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  // padding-top: 4rem;
+  // padding-bottom: 4rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  z-index: 2;
+  @media(max-width: 767px){
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .logo-white {
+    display: none;
+  }
+
+  .selectW {
+    margin-left: 7rem;  
+    background: url('@img/icons/place.svg') no-repeat left center / 13px;
+    @media(max-width: 1199px){
+      margin-left: 4rem;
+    }
+    @media(max-width: 575px){
+      margin-left: 3rem;
+    }
+    @media(max-width: 420px){
+      margin-left: 2rem;
+    }
+    @media(max-width: 390px){
+      margin-left: 1rem;
+    }
+
+    select {
+      font-size: 1.6rem;
+      padding-right: 2rem;
+      color: #fff;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url('@img/icons/select-arrow.svg') no-repeat right center;
+      font-weight: 500;
+      letter-spacing: .04em;
+      cursor: pointer;
+      font-weight: 600;
+      @media(max-width: 350px){
+        font-size: 1.4rem;
+      }
+      option {
+        color: #000;
+      }
+    }
+  }
+
+  &Logo {
+    max-width: 310px;
+    @media(max-width: 991px){
+      max-width: 20rem;
+    }
+    @media(max-width: 575px){
+      max-width: 15rem;
+    }
+    @media(max-width: 375px){
+      max-width: 12rem;
+    }
+  }
+
+  &Phone {
+    margin-right: 3.2rem;
+    color: #ffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: url('@img/icons/phone.svg') no-repeat left center / 24px;
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: .85;
+    }
+  }
+
+  .socials {
+    margin-right: 2.4rem;
+  }
+
+  .button {
+    margin-right: 2.4rem;
+  }
+
+  &.fixed-on {
+    background-color: #fff;
+    transition: background-color .2s linear;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.05);
+    position: fixed;    
+    @media(max-width: 767px){
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
+    .selectW {
+     
+      background: url('@img/icons/place-black.svg') no-repeat left center / 13px;
+      @media(max-width: 767px){
+        display: none;
+      }
+      select {
+        color: #000;
+        background: url('@img/icons/select-arrow-black.svg') no-repeat right center;
+
+        option {
+          color: #000;
+        }
+      }
+    }
+
+    .hamburger div {
+      background: #1C1A19;
+    }
+
+    .button {
+      border-color: #222B32;
+      color: #222B32;
+
+      &:hover {
+        background-color: #222B32;
+        color: #fff;
+      }
+    }
+
+    .headerPhone {
+      color: #1C1A19;
+      background: url('@img/icons/phone-black.svg') no-repeat left center / 24px;
+    }
+
+    .socials--white {
+      ul {
+        li {
+          a {
+            svg {
+              fill: #222B32;
+            }
+          }
+        }
+      }
+    }
+
+    .logo-white {
+      display: block;
+    }
+
+    .logo-black {
+      display: none;
+    }
+  }
+}
+
+.headerNav {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  background-color: #fff;
+  padding-top: 2.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  min-width: 50rem;
+  height: 100vh;
+  // overflow: scroll;
+  @media(max-width: 767px){
+    padding-top: 1.75rem;
+    overflow-y: scroll;
+    padding-bottom: 10rem;
+  }
+  @media(max-width: 575px){
+    width: 100%;
+    min-width: unset;
+  }
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.5s;
+    animation: shows 0.5s;
+  }
+
+  .selectW {
+    height: fit-content;
+    background: url('@img/icons/place-black.svg') no-repeat left center / 13px;
+
+    select {
+      font-size: 1.6rem;
+      color: #000;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      letter-spacing: .04em;
+      background: none;
+      cursor: pointer;
+      font-weight: 600;
+      height: fit-content;
+
+      option {
+        color: #000;
+      }
+    }
+  }
+
+  &List {
+    &W {
+      margin-top: 2.5rem;
+      @media(max-width: 767px){
+        margin-top: 5rem;
+      }
+    }
+
+    li {
+      margin-bottom: 1.2rem;
+
+      a {
+        font-weight: 600;
+        transition: color .2s linear;
+        &:hover {
+          color: #FFCC34;
+        }
+      }
+    }
+  }
+
+  .button {
+    margin-top: 3.8rem;
+    font-weight: 700;
+    @media(max-width: 767px){
+      margin-top: 3.0rem;
+    }
+  }
+
+  .headerPhone {
+    color: #000;
+    background: url('@img/icons/phone-black.svg') no-repeat left center / 24px;
+    margin-bottom: 3rem;
+    margin-top: 1.7rem;
+    margin-right: 0;
+    @media(max-width: 767px){
+      margin-top: 1.4rem;
+      margin-bottom: 2.2rem;
+      font-size: 2.4rem;
+      font-weight: 900;
+    }
+    @media(max-width: 575px){
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+      // display: flex;
+    }
+  }
+
+  .btnClose {
+    position: relative;
+    top: 10px;
+    @media(max-width: 767px){
+      top: 2px;
+    }
+  }
+  .logo {
+    @media(max-width: 575px){
+      max-width: 15rem;
+    }
+  }
+}
+
+.overlayMenu {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 70%);
+  z-index: 2;
+  transition: opacity .2s linear, visibility .2s linear;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+
+  }
+}

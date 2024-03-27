@@ -1,0 +1,120 @@
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerW d-flex align-items-center justify-content-between">
+      <div class="headerL d-flex align-items-center">
+        <a href="/" class="headerLogo logo">
+          <img class="logo-black" src="@img/admin/header/logo.svg" alt="logo">
+          <img class="logo-white" src="@img/admin/header/logo-white.svg" alt="logo">
+        </a>
+        <div class="selectW">
+          <select name="selectCity" id="selectCity" class="formSelect">
+            <option value="irkutsk">Иркутск</option>
+            <option value="ulan">Улан-Удэ</option>
+            <option value="other">Другой</option>
+          </select>
+        </div><!-- /selectW -->
+      </div><!-- /headerL -->
+      <div class="headerR d-flex align-items-center">
+        <a href="tel:88001234567" class="headerPhone d-none d-md-block">8 800 123 45 67</a>
+        <div class="socials socials--white d-none d-lg-block">
+          <ul class="socialsList d-flex gap-4">
+            <li>
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div><!-- /socials -->
+        <button class="button button--transparent_orange headerBtn d-none d-xl-flex" data-bs-toggle="modal"
+          data-bs-target="#modal-order">
+          Оставить заявку
+        </button>
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+        </div><!-- /Hamburger Menu -->
+      </div><!-- /headerR -->
+
+    </div>
+  </div>
+</header>
+<div class="headerNav">
+  <div class="d-flex justify-content-between align-items-start">
+    <a href="/" class="logo">
+      <img src="@img/admin/header/logo-white.svg" alt="logo">
+    </a>
+    <div class="selectW d-block d-sm-none">
+      <select name="selectCity" id="selectCity" class="formSelect">
+        <option value="irkutsk">Иркутск</option>
+        <option value="ulan">Улан-Удэ</option>
+        <option value="other">Другой</option>
+      </select>
+    </div><!-- /selectW -->
+    <button class="btnClose">
+      <img src="@img/icons/menu-close.svg" alt="icon">
+    </button>
+  </div>
+  <div class="headerNavListW d-flex justify-content-center justify-content-sm-between">
+    <ul class="headerNavList text-center text-sm-start">
+      <li><a href="#">Калькулятор</a></li>
+      <li><a href="#">О нас </a></li>
+      <li><a href="#">Наша команда </a></li>
+      <li><a href="#">Вопросы </a></li>
+      <li><a href="#">Контакты </a></li>
+    </ul>
+    <div class="selectW d-none d-sm-block">
+      <select name="selectCity" id="selectCity" class="formSelect">
+        <option value="irkutsk">Иркутск</option>
+        <option value="ulan">Улан-Удэ</option>
+        <option value="other">Другой</option>
+      </select>
+    </div><!-- /selectW -->
+  </div>
+  <a href="tel:88001234567" class="headerPhone">8 800 123 45 67</a>
+  <div class="socials">
+    <ul class="socialsList justify-content-center justify-content-sm-start d-flex gap-4">
+      <li>
+        <a href="#" target="_blank">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#viber"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div><!-- /socials -->
+  <button class="button button--transparent_orange headerBtn" data-bs-toggle="modal" data-bs-target="#modal-order">
+    Оставить заявку
+  </button>
+
+</div>

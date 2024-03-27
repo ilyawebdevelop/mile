@@ -1,0 +1,116 @@
+.faq {
+  background-color: #F3F3F3;
+  padding-bottom: 2.8rem;
+  @media(max-width: 991px){
+    padding-bottom: 6rem;
+  }
+  @media(max-width: 767px){
+   padding-top: 1rem; 
+  }
+  &Img {
+    margin-bottom: 1rem;
+  }
+
+  &Card {
+    border: 2px solid #FFCC34;
+    padding: 5rem 4rem 5rem 4rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    box-shadow: 0 35px 35px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    @media(max-width: 1199px){
+      padding: 4rem 3rem;
+      margin-left: 1rem;
+    }
+    @media(max-width: 991px){
+      width: fit-content;
+      margin-top: 2.4rem;
+      margin-left: 0;
+    }
+    &Title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 2.4rem;
+      line-height: 125%;
+      color: #0e1316;
+    } 
+  }
+}
+
+.accordion {
+  &-body {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 1.6rem;
+  }
+
+  &-item {
+    border-color: transparent;
+    background-color: transparent;
+
+    &:not(:last-child) {
+      .accordion-button {
+        border-bottom: 1px solid transparent;
+
+        &.collapsed {
+          border-bottom: 1px solid #DCDAD5;
+        }
+      }
+    }
+  }
+
+  &-button {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    border-color: transparent;
+    background-color: transparent;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    @media(max-width: 767px){
+      padding-bottom: 1.6rem;
+      padding-top: 1.6rem;
+    }
+
+    &::after {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('@img/icons/plus.svg');
+      transform: none;
+      background-position: center center;
+      background-size: 28px;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    &:not(.collapsed) {
+      background-color: transparent;
+      box-shadow: none;
+      border-color: transparent;
+      color: #0E1316;
+
+      &::after {
+        background-image: url('@img/icons/minus.svg');
+        transform: none;
+        background-position: center center;
+        background-size: 20px;
+      }
+    }
+  }
+
+  &-header {
+
+    color: #0E1316;
+
+    &.collapsed {}
+  }
+}

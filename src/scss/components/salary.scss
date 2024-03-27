@@ -1,0 +1,112 @@
+.salary {
+  background-color: #0E1316;
+  min-height: 72rem;
+  @media(max-width: 1199px){
+    min-height: unset;
+    padding-bottom: 7rem;
+    padding-top: 6.5rem;
+  } 
+  .h2 {
+    @media(max-width: 767px){
+      text-align: center;
+    }
+  }
+
+  &Head {
+    margin-bottom: 6rem;
+    @media(max-width: 991px){
+      margin-bottom: 4.5rem;
+    }   
+    .navArrowW {
+      @media(max-width: 767px){
+        display: none;
+      }
+    }
+  }
+
+  &Slider {
+    overflow: visible;
+    @media(max-width: 767px){
+      padding-right: 40px;
+    }
+  }
+
+  &Slide {
+    background-color: #fff;
+    border-radius: 2rem;
+    min-height: 27rem;
+    // height: auto;
+    transition: all .2s linear;
+    border: 3px solid transparent;
+    &.swiper-slide-active {
+      border-color: #FFCC34;
+    }
+
+    &:hover {
+      transform: translateY(-20px);
+      border-color: #FFCC34;
+      // height: 330px;
+      // -webkit-animation: translatey 0.3s;
+      // animation: translatey 0.3s;
+      @media(max-width: 1199px){
+        transform: none;
+      }
+      .salarySlideBtn {
+        display: block;
+        -webkit-animation: shows 0.3s;
+        animation: shows 0.3s;
+        @media(max-width: 1199px){
+          animation: none;
+        }
+      }
+    }
+
+    &Img {
+      img {
+        height: 20rem;
+        border-radius: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &Content {
+      padding-bottom: 2.2rem;
+      padding-top: 2.2rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: .8rem;
+      position: relative;
+      // bottom: 50px;
+      // top: 12.5rem;
+      left: 0;
+      background-color: rgba($color: #fff, $alpha: .9);
+      width: 100%;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      // transition: all .2s linear;
+      margin-top: -76px;
+    }
+
+    &Title {
+      text-align: center;
+      padding-left: .8rem;
+      padding-right: .8rem;
+      font-size: 2.2rem;
+      line-height: 3rem;
+    }
+
+    &Type {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+
+    &Price {
+      column-gap: .8rem;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      font-weight: 700;
+    }
+  }
+}

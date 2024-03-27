@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800;900&&family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Главная</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="headerW d-flex align-items-center justify-content-between">
+      <div class="headerL d-flex align-items-center">
+        <a href="/" class="headerLogo logo">
+          <img class="logo-black" src="img/admin/header/logo.svg" alt="logo">
+          <img class="logo-white" src="img/admin/header/logo-white.svg" alt="logo">
+        </a>
+        <div class="selectW">
+          <select name="selectCity" id="selectCity" class="formSelect">
+            <option value="irkutsk">Иркутск</option>
+            <option value="ulan">Улан-Удэ</option>
+            <option value="other">Другой</option>
+          </select>
+        </div><!-- /selectW -->
+      </div><!-- /headerL -->
+      <div class="headerR d-flex align-items-center">
+        <a href="tel:88001234567" class="headerPhone d-none d-md-block">8 800 123 45 67</a>
+        <div class="socials socials--white d-none d-lg-block">
+          <ul class="socialsList d-flex gap-4">
+            <li>
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div><!-- /socials -->
+        <button class="button button--transparent_orange headerBtn d-none d-xl-flex" data-bs-toggle="modal"
+          data-bs-target="#modal-order">
+          Оставить заявку
+        </button>
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+        </div><!-- /Hamburger Menu -->
+      </div><!-- /headerR -->
+
+    </div>
+  </div>
+</header>
+<div class="headerNav">
+  <div class="d-flex justify-content-between align-items-start">
+    <a href="/" class="logo">
+      <img src="img/admin/header/logo-white.svg" alt="logo">
+    </a>
+    <div class="selectW d-block d-sm-none">
+      <select name="selectCity" id="selectCity" class="formSelect">
+        <option value="irkutsk">Иркутск</option>
+        <option value="ulan">Улан-Удэ</option>
+        <option value="other">Другой</option>
+      </select>
+    </div><!-- /selectW -->
+    <button class="btnClose">
+      <img src="img/icons/menu-close.svg" alt="icon">
+    </button>
+  </div>
+  <div class="headerNavListW d-flex justify-content-center justify-content-sm-between">
+    <ul class="headerNavList text-center text-sm-start">
+      <li><a href="#">Калькулятор</a></li>
+      <li><a href="#">О нас </a></li>
+      <li><a href="#">Наша команда </a></li>
+      <li><a href="#">Вопросы </a></li>
+      <li><a href="#">Контакты </a></li>
+    </ul>
+    <div class="selectW d-none d-sm-block">
+      <select name="selectCity" id="selectCity" class="formSelect">
+        <option value="irkutsk">Иркутск</option>
+        <option value="ulan">Улан-Удэ</option>
+        <option value="other">Другой</option>
+      </select>
+    </div><!-- /selectW -->
+  </div>
+  <a href="tel:88001234567" class="headerPhone">8 800 123 45 67</a>
+  <div class="socials">
+    <ul class="socialsList justify-content-center justify-content-sm-start d-flex gap-4">
+      <li>
+        <a href="#" target="_blank">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#viber"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#whatsapp"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div><!-- /socials -->
+  <button class="button button--transparent_orange headerBtn" data-bs-toggle="modal" data-bs-target="#modal-order">
+    Оставить заявку
+  </button>
+
+</div>
+		<main class="main">		
+			<section class="intro">
+  <div class="container">
+    <div class="introW">
+      <div class="introContent">
+        <div class="h1 text-white text-center text-md-start">
+          Пассивный <span class="text-white d-none d-md-inline-block">доход</span>
+          <div class="d-flex align-items-center flex-column flex-md-row">
+            <span class="d-flex gap-2"><span class="text-white d-block d-md-none">доход </span> на авто</span>
+            <div class="roundText">с гарантированной ставкой</div>
+          </div>
+          до 40% годовых
+        </div><!-- /h1-->
+        <form action="#" class="introForm form">
+          <div class="formRow flex-column flex-sm-row d-flex">
+            <div class="inputW w-100 w-sm-50">
+              <input type="text" class="formInput" placeholder="Имя">
+            </div>
+            <div class="inputW w-100 w-sm-50">
+              <input type="tel" class="formInput" placeholder="Телефон">
+            </div>
+          </div>
+          <button class="button button--orange w-100">Хочу стать инвестором</button>
+          <div class="agreement">
+            Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
+              href="#">пользовательским соглашением</a>
+          </div>
+        </form>
+      </div><!-- /introContent -->
+      <div class="introMobileImgW d-block d-lg-none">
+        <img src="img/intro/car-image.png" alt="car" class="carMobile">
+
+      </div>
+      <button class="introVideoButton">
+        <div class="introVideoButtonImg">
+          <img class="introVideoButtonImage" src="img/intro/button-man.png" alt="image">
+          <div class="introVideoButtonPlay">
+            <img class="introVideoButtonPlayImg d-none d-lg-block" src="img/icons/play.svg" alt="play">
+            <img class="introVideoButtonPlayImg d-block d-lg-none" src="img/icons/play-sm.svg" alt="play">
+          </div>
+        </div>
+        <div class="introVideoButtonText">
+          Видео-презентация за 60 сек
+        </div>
+        <div class="introVideoButtonClose">
+          <img src="img/icons/close-white.svg" alt="close">
+        </div>
+      </button>
+
+    </div>
+
+    <div class="introAdvs">
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="introAdv">
+            <img src="img/icons/adv.svg" alt="icon" class="introAdvIcon">
+            <span class="introAdvDescr">Регулярные<br> ежемесячные выплаты</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="introAdv">
+            <img src="img/icons/adv.svg" alt="icon" class="introAdvIcon">
+            <span class="introAdvDescr">Не&nbsp;требует времени и&nbsp;специальных знаний</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="introAdv">
+            <img src="img/icons/adv.svg" alt="icon" class="introAdvIcon">
+            <span class="introAdvDescr">Официально,<br> по договору</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="introAdv">
+            <img src="img/icons/adv.svg" alt="icon" class="introAdvIcon">
+            <span class="introAdvDescr">Без переоформления<br> права собственности</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /introAdvs -->
+    <img src="img/intro/car-full.png" alt="car" class="car">
+  </div>
+
+
+</section>
+			<section class="how">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="howTitle h2 d-block d-lg-none">
+          Как формируется доход?
+        </div>
+        <img class="mb-4 mb-lg-0" src="img/how/image.svg" alt="image">
+      </div>
+      <div class="col-lg-7">
+        <div class="howTitle h2 d-none d-lg-block">
+          Как формируется доход?
+        </div>
+        <div class="content text-center text-md-start">
+          <p>
+            Вы и другие инвесторы предоставляете свои автомобили во временное пользование нашего автопарка из которых мы
+            формируем пуллы, каждый пулл работает как одно целое и приносит <strong>доход всем инвесторам вне
+              зависимости
+              нагрузки/простоя на конкретный автомобиль.</strong>
+          </p>
+          <p>
+            Такая система позволяет обеспечивать беспрерывные выплаты инвесторам, каждый автомобиль работающий в пуле
+            подстраховывает другой автомобиль.
+          </p>
+        </div>
+        <div class="howAction d-flex flex-column align-items-center text-center">
+          <button class="button button--orange howBtn" data-bs-toggle="modal" data-bs-target="#modal-how">Запросить оценку вашего авто</button>
+          <span>Год выпуска от 2014г, пробег до 100 тыс.км, хорошее техническое состояние</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="salary">
+  <div class="container">
+
+    <div class="sectionHead salaryHead d-flex flex-wrap gap-4 align-items-center justify-content-center justify-content-md-between">
+      <div class="h2 text-white">
+        Сколько вы будете зарабатывать
+      </div>
+      <div class="navArrowW">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div><!-- /sectionHead -->
+
+    <div class="swiper salarySlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide salarySlide">
+          <div class="salarySlideImg">
+            <img src="img/admin/salary/sal-1.jpg" alt="image">
+          </div>
+          <div class="salarySlideContent">
+            <div class="salarySlideTitle">
+              Toyota Passo
+            </div>
+            <div class="salarySlideType">
+              Хэтчбек 
+            </div>
+            <div class="salarySlidePrice d-flex">
+              до 26 000
+              <span>₽</span>
+            </div>
+            <button class="button button--orange salarySlideBtn">
+              Начать зарабатывать
+            </button>
+          </div><!-- /salarySlideContent -->
+        </div><!-- /salarySlide -->
+
+        <div class="swiper-slide salarySlide">
+          <div class="salarySlideImg">
+            <img src="img/admin/salary/sal-2.jpg" alt="image">
+          </div>
+          <div class="salarySlideContent">
+            <div class="salarySlideTitle">
+              Volkswagen Polo Volkswagen Polo
+            </div>
+            <div class="salarySlideType">
+              Хэтчбек  Хэтчбек 
+            </div>
+            <div class="salarySlidePrice d-flex">
+              ддо 38 000
+              <span>₽</span>
+            </div>
+            <button class="button button--orange salarySlideBtn">
+              Начать зарабатывать
+            </button>
+          </div><!-- /salarySlideContent -->
+        </div><!-- /salarySlide -->
+
+        <div class="swiper-slide salarySlide">
+          <div class="salarySlideImg">
+            <img src="img/admin/salary/sal-3.jpg" alt="image">
+          </div>
+          <div class="salarySlideContent">
+            <div class="salarySlideTitle">
+              Volkswagen Polo
+            </div>
+            <div class="salarySlideType">
+              Хэтчбек 
+            </div>
+            <div class="salarySlidePrice d-flex">
+              до 38 000
+              <span>₽</span>
+            </div>
+            <button class="button button--orange salarySlideBtn">
+              Начать зарабатывать
+            </button>
+          </div><!-- /salarySlideContent -->
+        </div><!-- /salarySlide -->
+
+        <div class="swiper-slide salarySlide">
+          <div class="salarySlideImg">
+            <img src="img/admin/salary/sal-4.jpg" alt="image">
+          </div>
+          <div class="salarySlideContent">
+            <div class="salarySlideTitle">
+              Volkswagen Jetta
+            </div>
+            <div class="salarySlideType">
+              Хэтчбек 
+            </div>
+            <div class="salarySlidePrice d-flex">
+              до 34 000
+              <span>₽</span>
+            </div>
+            <button class="button button--orange salarySlideBtn">
+              Начать зарабатывать
+            </button>
+          </div><!-- /salarySlideContent -->
+        </div><!-- /salarySlide -->
+
+        <div class="swiper-slide salarySlide">
+          <div class="salarySlideImg">
+            <img src="img/admin/salary/sal-1.jpg" alt="image">
+          </div>
+          <div class="salarySlideContent">
+            <div class="salarySlideTitle">
+              Toyota Passo
+            </div>
+            <div class="salarySlideType">
+              Хэтчбек 
+            </div>
+            <div class="salarySlidePrice d-flex">
+              до 26 000
+              <span>₽</span>
+            </div>
+            <button class="button button--orange salarySlideBtn">
+              Начать зарабатывать
+            </button>
+          </div><!-- /salarySlideContent -->
+        </div><!-- /salarySlide -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="budget">
+  <div class="container">
+
+    <div class="sectionHead">
+      <h2 class="h2">
+        У вас нет автомобиля, но <span> есть подходящий бюджет</span> на покупку?
+      </h2>
+    </div><!-- /sectionHead -->
+
+    <div class="row budgetRow align-items-center">
+      <div class="col-lg-6 budgetItem order-2 order-lg-1">
+        <div class="h3 blockTitle d-none d-lg-block">
+          Пакет услуг <span>«Миля Инвест»</span>
+        </div>
+        <ul class="budgetList">
+          <li>
+            Осуществляем поиск и подбор подходящего авто
+          </li>
+          <li>
+            Согласовываем покупку и оформляем его в <strong>ВАШУ собственность</strong>
+          </li>
+          <li>
+            <strong>Готовим все</strong> необходимые документы <span>(ОСАГО, Лицензию, доверенность)</span>
+          </li>
+          <li>
+            <strong>Дооснащаем авто </strong> всем необходимым <span>(коврики, чехлы, GPS Маяк, огнетушитель, аптечка,
+              знак аварийной остановки, буксировочный трос и проушина, пусковые провода)</span>
+          </li>
+        </ul>
+        <button class="button button--orange budgetBtn">Оставить заявку</button>
+      </div>
+      <div class="col-lg-6 image-right order-1 order-lg-2">
+        <div class="h3 blockTitle d-block d-lg-none">
+          Пакет услуг <span>«Миля Инвест»</span>
+        </div>
+        <img src="img/admin/budget/image-1.jpg" alt="image" class="budgetImg">
+      </div>
+    </div><!-- /budgetRow -->
+    <div class="row budgetRow align-items-center">
+      <div class="col-lg-6 image-left">
+        <div class="h3 blockTitle d-block d-lg-none">
+          Даете денежные средства в <span>займ под %</span>
+        </div>
+        <img src="img/admin/budget/image-2.jpg" alt="image" class="budgetImg">
+      </div>
+      <div class="col-lg-6 budgetItem">
+        <div class="h3 blockTitle d-none d-lg-block">
+          Даете денежные средства в <span>займ под %</span>
+        </div>
+        <ul class="budgetList">
+          <li>
+            Составляем <strong> договор займа</strong> денежных средств на покупку автомобилей под %
+          </li>
+          <li>
+            Приобретаем на ваши средства <strong>автомобили</strong>
+          </li>
+          <li>
+            <strong>Дооснащаем авто </strong> всем необходимым и запускаем в работу
+          </li>
+        </ul>
+        <button class="button button--orange budgetBtn">Оставить заявку</button>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="h3 blockTitle d-none d-lg-block">
+          Самостоятельно <span class="line-long">приобретаете автомобиль</span>
+        </div>
+        <ul class="budgetList">
+          <li>
+            Осуществляете поиск и покупку подходящего <strong>авто</strong>
+          </li>
+          <li>
+            Проходите ТО и оформляете страховой полис
+          </li>
+          <li>
+            <strong>Оформляете</strong> в собственность и ставите на учет
+          </li>
+          <li>
+            Оформляете <strong>доверенность</strong> и передаете нам автомобиль
+          </li>
+        </ul>
+        <button class="button button--orange budgetBtn">Оставить заявку</button>
+      </div>
+      <div class="col-lg-6 image-right order-1 order-lg-2">
+        <div class="h3 blockTitle d-block d-lg-none">
+          Самостоятельно <span class="line-long">приобретаете автомобиль</span>
+        </div>
+        <img src="img/admin/budget/image-3.jpg" alt="image" class="budgetImg">
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="calc">
+  <div class="container">
+
+    <div class="sectionHead">
+      <h2 class="h2 text-white calcTitle">
+        Рассчитайте свой доход <span> от инвестирования</span>
+      </h2>
+    </div><!-- /sectionHead -->
+
+    <form action="#" class="calcForm">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="inputW">
+            <div class="inputName">
+              Сумма инвестирования
+            </div>
+            <input type="text" class="formInput" placeholder="15">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="inputW">
+            <div class="inputName">
+              Срок инвестирования (мес.)
+            </div>
+            <select name="calcSelect" id="calcSelect" class="formSelect">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="calcTotal">
+            <div class="inputName">
+              Ваш заработок с учетом прибыли
+            </div>
+            <div class="calcTotalPrice d-flex gap-2 justify-content-center">
+              до 26 000
+              <span>₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+			<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 order-3 order-lg-1">
+        <h2 class="h2 d-none d-lg-block">
+          О нас
+        </h2>
+        <div class="aboutImgW">
+          <img src="img/admin/about/image.png" alt="image" class="abiutImg">
+
+          <div class="aboutContent">
+            <div class="aboutContentInner">
+              <p>
+                Компания МИЛЯ.ИНВЕСТ работает уже в течение 8 лет, гарантирует своим инвесторам абсолютно безопасный и
+                выгодный формат пассивного заработка. Мы поддерживаем наших инвесторов на каждом шагу.
+              </p>
+              <span class="aboutName">
+                Роман Алаев
+              </span>
+              <div class="aboutDescr">
+                Директор МИЛЯ.ИНВЕСТ
+              </div>
+            </div>
+         
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-1 order-2"></div>
+      <div class="col-lg-4 order-1 order-lg-3 aboutBg">
+        <h2 class="h2 d-block d-lg-none text-center position-relative z-1">
+          О нас
+        </h2>
+        <div class="aboutList">
+
+          <div class="aboutItem">
+            <div class="aboutItemCount">
+              с 2015 года
+            </div>
+            <div class="aboutItemDescr">
+              работаем для вас
+            </div>
+          </div><!-- /aboutItem -->
+
+          <div class="aboutItem">
+            <div class="aboutItemCount">
+              180+
+            </div>
+            <div class="aboutItemDescr">
+              автомобилей в автопарке
+            </div>
+          </div><!-- /aboutItem -->
+
+          <div class="aboutItem">
+            <div class="aboutItemCount">
+              1000+
+            </div>
+            <div class="aboutItemDescr">
+              заявок на аренду авто ежемесячно
+            </div>
+          </div><!-- /aboutItem -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="team teamSect">
+  <div class="container">
+
+    <div class="sectionHead teamHead d-flex flex-wrap gap-4 align-items-center justify-content-between">
+      <div class="h2">
+        Наша команда
+      </div>
+      <div class="navArrowW">
+        <button class="navArrow navArrow--gray navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrow--gray navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div><!-- /sectionHead -->
+
+    <div class="swiper teamSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide teamSlide">
+          <img src="img/admin/team/image-1.jpg" alt="image" class="teamSlideImg">
+          <div class="teamSlideContent">
+            <div class="teamSlideTitle">
+              Завьялов Кирилл
+            </div>
+            <div class="teamSlideDescr">
+              Ведущий менеджер по продажам
+            </div>
+          </div><!-- /teamSlideContent -->
+        </div><!-- /teamSlide -->
+
+        <div class="swiper-slide teamSlide">
+          <img src="img/admin/team/image-1.jpg" alt="image" class="teamSlideImg">
+          <div class="teamSlideContent">
+            <div class="teamSlideTitle">
+              Завьялов Кирилл Завьялов Кирилл
+            </div>
+            <div class="teamSlideDescr">
+              Ведущий
+            </div>
+          </div><!-- /teamSlideContent -->
+        </div><!-- /teamSlide -->
+
+        <div class="swiper-slide teamSlide">
+          <img src="img/admin/about/image.png" alt="image" class="teamSlideImg">
+          <div class="teamSlideContent">
+            <div class="teamSlideTitle">
+              Завьялов Кирилл Завьялов Кирилл
+            </div>
+            <div class="teamSlideDescr">
+              Ведущий Ведущий Ведущий Ведущий
+            </div>
+          </div><!-- /teamSlideContent -->
+        </div><!-- /teamSlide -->
+
+        <div class="swiper-slide teamSlide">
+          <img src="img/admin/team/image-1.jpg" alt="image" class="teamSlideImg">
+          <div class="teamSlideContent">
+            <div class="teamSlideTitle">
+              Завьялов Кирилл Завьялов Кирилл
+            </div>
+            <div class="teamSlideDescr">
+              Ведущий
+            </div>
+          </div><!-- /teamSlideContent -->
+        </div><!-- /teamSlide -->
+
+        <div class="swiper-slide teamSlide">
+          <img src="img/admin/about/image.png" alt="image" class="teamSlideImg">
+          <div class="teamSlideContent">
+            <div class="teamSlideTitle">
+              Завьялов Кирилл Завьялов Кирилл
+            </div>
+            <div class="teamSlideDescr">
+              Ведущий Ведущий Ведущий Ведущий
+            </div>
+          </div><!-- /teamSlideContent -->
+        </div><!-- /teamSlide -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<div class="faqTitleSmW d-block d-md-none">
+  <div class="container">
+    <h2 class="h2 text-center mb-4 pb-4">
+      Часто задаваемые вопросы
+    </h2>
+  </div>
+</div>
+<section class="faq">
+  <div class="container">
+
+    <div class="sectionHead d-none d-md-flex">
+      <h2 class="h2 text-center">
+        Часто задаваемые вопросы
+      </h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                aria-expanded="true" aria-controls="collapse1">
+                Какой минимальный срок инвестирования? Какой минимальный срок инвестирования?
+                <div class="accordion-buttonArrow">
+
+                </div>
+              </button>
+            </h3>
+            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="contentText">
+                  Компания МИЛЯ.ИНВЕСТ работает уже в течение 8 лет, гарантирует своим инвесторам абсолютно безопасный и
+                  выгодный формат пассивного заработка. Мы поддерживаем наших инвесторов на каждом шагу. Минимальный
+                  срок инвестирование 6 месяцев.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Какая минимальная сумма инвестирования?
+                <div class="accordion-buttonArrow">
+
+                </div>
+              </button>
+            </h3>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Компания МИЛЯ.ИНВЕСТ работает уже в течение 8 лет, гарантирует своим инвесторам абсолютно безопасный и
+                выгодный формат пассивного заработка. Мы поддерживаем наших инвесторов на каждом шагу.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Заключаете ли вы договор?
+                <div class="accordion-buttonArrow">
+
+                </div>
+              </button>
+            </h3>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Компания МИЛЯ.ИНВЕСТ работает уже в течение 8 лет, гарантирует своим инвесторам абсолютно безопасный и
+                выгодный формат пассивного заработка. Мы поддерживаем наших инвесторов на каждом шагу. Компания
+                МИЛЯ.ИНВЕСТ работает уже в течение 8 лет, гарантирует своим инвесторам абсолютно безопасный и
+                выгодный формат пассивного заработка. Мы поддерживаем наших инвесторов на каждом шагу.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="faqCard">
+          <div class="faqCardTitle text-center">
+            Не нашли ответ?
+          </div>
+          <p class="text-center">Задайте интересующий вас вопрос</p>
+          <img src="img/faq/faq-image.svg" alt="image" class="faqImg">
+          <button class="button button--orange w-100">Задать вопрос</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="rent rentSect">
+  <div class="container">
+
+    <div class="sectionHead d-flex flex-wrap gap-4 text-center text-md-start justify-content-center justify-content-md-between">
+      <h2 class="h2 text-white rentTitle">
+        Узнайте больше о заработке <span> на аренде автомобилей</span>
+      </h2>
+      <div class="navArrowW">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div><!-- /sectionHead -->
+
+    <div class="swiper rentSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide rentSlide">
+          <a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="rentSlideImg" data-fancybox>
+            <img src="img/admin/rent/image-1.png" alt="image">
+            <button class="rentSlideBtn"><img src="img/rent/youtube.svg" alt="youtube"></button>
+          </a>
+          <div class="rentSlideContent">
+            <div class="rentSlideTitle">Пассивный доход</div>
+            <div class="rentSlideDescr">
+              на авто с гарантированной ставкой до 40% годовых
+            </div>
+          </div>
+        </div><!-- /rentSlide -->
+
+        <div class="swiper-slide rentSlide">
+          <a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="rentSlideImg" data-fancybox>
+            <img src="img/admin/rent/image-1.png" alt="image">
+            <button class="rentSlideBtn"><img src="img/rent/youtube.svg" alt="youtube"></button>
+          </a>
+          <div class="rentSlideContent">
+            <div class="rentSlideTitle">Пассивный доход</div>
+            <div class="rentSlideDescr">
+              на авто с ...
+            </div>
+          </div>
+        </div><!-- /rentSlide -->
+
+        <div class="swiper-slide rentSlide">
+          <a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="rentSlideImg" data-fancybox>
+            <img src="img/admin/rent/image-1.png" alt="image">
+            <button class="rentSlideBtn"><img src="img/rent/youtube.svg" alt="youtube"></button>
+          </a>
+          <div class="rentSlideContent">
+            <div class="rentSlideTitle">Пассивный доход</div>
+            <div class="rentSlideDescr">
+              на авто с гарантированной ставкой до 40% годовых
+            </div>
+          </div>
+        </div><!-- /rentSlide -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="exp expSect">
+  <div class="container">
+
+    <div class="sectionHead expHead d-flex flex-wrap gap-4 align-items-center text-center text-md-start justify-content-center justify-content-md-between">
+      <div class="h2">
+        Опыт наших инвесторов
+      </div>
+      <div class="navArrowW">
+        <button class="navArrow navArrow--gray navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrow--gray navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div><!-- /sectionHead -->
+
+    <div class="swiper expSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide expSlide">
+          <a class="expSlideImg" href="img/admin/exp/image-1.jpg" data-fancybox="gallery">
+            <img src="img/admin/exp/image-1.jpg" alt="image">
+            <button class="expSlideBtn"><img src="img/icons/search.svg" alt="search"></button>
+          </a>
+          <div class="expSlideContent">
+            <div class="d-flex align-items-center expSlideNameW">
+              <img class="expSlideFace" src="img/admin/face/image-1.jpg" alt="image">
+              <div class="expSlideName">Завьялов Кирилл</div>
+            </div>
+            <div class="expSlideParams">
+              <div class="expSlideParam">
+                <span class="text--sm">Количество автомобилей</span>
+                <span class="expSlideParamText"><strong>3 автомобиля</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Средний ежемесячный доход</span>
+                <span class="expSlideParamText"><strong> 112 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Общий заработок за 2023г</span>
+                <span class="expSlideParamText"><strong> 1 344 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+            </div>
+
+          </div>
+        </div><!-- /expSlide -->
+
+        <div class="swiper-slide expSlide">
+          <a class="expSlideImg" href="img/admin/exp/image-2.jpg" data-fancybox="gallery">
+            <img src="img/admin/exp/image-2.jpg" alt="image">
+            <button class="expSlideBtn"><img src="img/icons/search.svg" alt="search"></button>
+          </a>
+          <div class="expSlideContent">
+            <div class="d-flex align-items-center expSlideNameW">
+              <img class="expSlideFace" src="img/admin/face/image-1.jpg" alt="image">
+              <div class="expSlideName">Завьялов</div>
+            </div>
+            <div class="expSlideParams">
+              <div class="expSlideParam">
+                <span class="text--sm">Количество автомобилей</span>
+                <span class="expSlideParamText"><strong>5 автомобиля</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Средний ежемесячный доход</span>
+                <span class="expSlideParamText"><strong> 1121 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Общий заработок за 2024г</span>
+                <span class="expSlideParamText"><strong> 5 344 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+            </div>
+
+          </div>
+        </div><!-- /expSlide -->
+
+        <div class="swiper-slide expSlide">
+          <a class="expSlideImg" href="img/admin/exp/image-3.jpg" data-fancybox="gallery">
+            <img src="img/admin/exp/image-3.jpg" alt="image">
+            <button class="expSlideBtn"><img src="img/icons/search.svg" alt="search"></button>
+          </a>
+          <div class="expSlideContent">
+            <div class="d-flex align-items-center expSlideNameW">
+              <img class="expSlideFace" src="img/admin/face/image-1.jpg" alt="image">
+              <div class="expSlideName">Завьялов Завьялов Кирилл</div>
+            </div>
+            <div class="expSlideParams">
+              <div class="expSlideParam">
+                <span class="text--sm">Количество автомобилей</span>
+                <span class="expSlideParamText"><strong>5 автомобиля</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Средний ежемесячный доход</span>
+                <span class="expSlideParamText"><strong> 1121 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Общий заработок за 2024г</span>
+                <span class="expSlideParamText"><strong> 5 344 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+            </div>
+
+          </div>
+        </div><!-- /expSlide -->
+
+        <div class="swiper-slide expSlide">
+          <a class="expSlideImg" href="img/admin/exp/image-1.jpg" data-fancybox="gallery">
+            <img src="img/admin/exp/image-1.jpg" alt="image">
+            <button class="expSlideBtn"><img src="img/icons/search.svg" alt="search"></button>
+          </a>
+          <div class="expSlideContent">
+            <div class="d-flex align-items-center expSlideNameW">
+              <img class="expSlideFace" src="img/admin/face/image-1.jpg" alt="image">
+              <div class="expSlideName">Завьялов </div>
+            </div>
+            <div class="expSlideParams">
+              <div class="expSlideParam">
+                <span class="text--sm">Количество автомобилей</span>
+                <span class="expSlideParamText"><strong>5 автомобиля</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Средний ежемесячный доход</span>
+                <span class="expSlideParamText"><strong> 1121 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+              <div class="expSlideParam">
+                <span class="text--sm">Общий заработок за 2024г</span>
+                <span class="expSlideParamText"><strong> 5 344 тыс. руб.</strong></span>
+              </div><!-- /expSlideParam -->
+            </div>
+
+          </div>
+        </div><!-- /expSlide -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="order">
+  <div class="container">
+    <div class="orderW">
+
+      <div class="sectionHead orderHead">
+        <h2 class="h2 text-white orderTitle">
+          Задать вопрос
+        </h2>
+      </div><!-- /sectionHead -->
+
+      <div class="row">
+        <div class="col-lg-6 col-xl-3">
+          <div class="inputW">
+            <input type="text" class="formInput" placeholder="Имя">
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <div class="inputW">
+            <input type="tel" class="formInput" placeholder="Телефон">
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <div class="inputW">
+            <input type="text" class="formInput" placeholder="Ваш вопрос">
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <button class="button button--orange w-100">Отправить заявку</button>
+        </div>
+      </div>
+
+      <div class="text-white agreement">
+        Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации и пользовательским соглашением</a> 
+      </div>
+
+    </div>
+  </div>
+</section>
+			<section class="mapSect">
+
+  <div class="mapW">
+    <div class="map" id="map">
+      <div class="container">
+        <iframe
+          src="https://yandex.by/map-widget/v1/?ll=104.299355%2C52.306696&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNzkzMxIc0KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiIKDayP0EIViihRQg%2C%2C&z=13.46"
+          width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;">
+        </iframe>
+        <div class="mapContent">
+          <div class="container">
+            <div class="mapTitle">Контакты</div>
+
+            <div class="mapItem">
+              <div class="mapItemTitle">
+                Адрес:
+              </div>
+              <div class="mapItemText">
+                г. Иркутск, ул. Фурманова, 9
+              </div>
+            </div><!-- /mapItem -->
+
+            <div class="mapItem">
+              <div class="mapItemTitle">
+                Телефон:
+              </div>
+              <a class="mapItemText" href="tel:+79998887766">
+                +7 999 888 77 66
+              </a>
+            </div><!-- /mapItem -->
+
+            <div class="mapItem">
+              <div class="mapItemTitle">
+                E-mail:
+              </div>
+              <a class="mapItemText" href="mailto:mail@gmail.com">
+                mail@gmail.com
+              </a>
+            </div><!-- /mapItem -->
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </div><!-- /map -->
+
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="copyright">
+          2024 © Миля.Инвест
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="d-flex footerItem">
+          <a class="footerLink" href="#">
+            Условия передачи информации
+          </a>
+          <a class="footerLink" href="#">
+            Пользовательское соглашение
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <a class="develop" href="#" target="_blank">
+          Разработка сайта – Вангер.рф
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="overlayMenu"></div>
+		<!-- modal -->
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modalContent modal-content">
+
+      <div class="modalTitle">Задать вопрос</div>
+      <form action="#" class="modalForm">
+        <div class="inputW">
+          <input type="text" class="formInput" placeholder="Имя">
+        </div>
+        <div class="inputW">
+          <input type="tel" class="formInput" placeholder="Телефон">
+        </div>
+        <div class="inputW">
+          <textarea class="formText" name="modalTextOrder" id="modalTextOrder" cols="30" rows="10"
+            placeholder="Интересующий вас вопрос"></textarea>
+        </div>
+        <div class="agreement">
+          Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
+            href="#">пользовательским соглашением</a>
+        </div>
+        <button class="button button--orange w-100 modalBtn">Отправить</button>
+      </form>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
+        <img src="img/icons/btn-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- how -->
+<div class="modal fade modal-order" id="modal-how" tabindex="-1" aria-labelledby="exampleModalLabel_1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modalContent modal-content">
+
+      <div class="modalTitle">Оставьте заявку
+        на оценку авто</div>
+      <form action="#" class="modalForm">
+        <div class="inputW">
+          <input type="text" class="formInput" placeholder="Имя">
+        </div>
+        <div class="inputW">
+          <input type="tel" class="formInput" placeholder="Телефон">
+        </div>
+        <div class="inputW">
+          <textarea class="formText" name="modalTextHow" id="modalTextHow" cols="30" rows="10"
+            placeholder="Интересующий вас вопрос"></textarea>
+        </div>
+        <div class="agreement">
+          Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
+            href="#">пользовательским соглашением</a>
+        </div>
+        <button class="button button--orange w-100 modalBtn">Отправить</button>
+      </form>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-how">
+        <img src="img/icons/btn-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- thanks -->
+<div class="modal fade modal-order" id="modal-thanks" tabindex="-1" aria-labelledby="exampleModalLabel_2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modalContent modal-content">
+
+      <div class="modalTitle">Спасибо за заявку!</div>
+      <img class="modalThanksImg" src="img/thanks/image.svg" alt="image">
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-thanks">
+        <img src="img/icons/btn-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- city -->
+<div class="modal fade modal-city" id="modal-city" tabindex="-1" aria-labelledby="exampleModalLabel_2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="modalContent modal-content" action="#">
+
+      <div class="modalTitle">Ваш город <strong>Иркутск?</strong></div>
+
+      <div class="modal-city-btn">
+        <button class="button">Да</button>
+        <button class="button">Нет</button>
+      </div>   
+    
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-city">
+        <img src="img/icons/btn-close.svg" alt="icon">
+      </button>
+    </form>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

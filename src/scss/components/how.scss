@@ -1,0 +1,39 @@
+.how {
+  padding-top: 13rem;
+  padding-bottom: 16rem;
+  @media(max-width: 1199px){
+    padding-top: 20rem;
+  }
+  @media(max-width: 991px){
+    padding-bottom: 6rem;
+  }
+  @media(max-width: 767px){
+    padding-top: 37rem;
+  }
+  @media(max-width: 575px){
+    padding-top: 38rem;
+  }
+  @media(max-width: 379px){
+    padding-top: 45rem;
+  }
+  &Title {
+    margin-bottom: 1.6rem;    
+    @media(max-width: 767px){
+      text-align: center;
+    }
+  }
+  &Action {
+    width: fit-content;
+    @media(max-width: 767px){
+      width: 100%;
+    }
+    span {
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      max-width: 35rem;
+      display: block;
+      margin-top: 2.4rem;
+    }
+  }
+}

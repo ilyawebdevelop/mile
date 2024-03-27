@@ -1,0 +1,30 @@
+.socials {
+  ul {
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity .2s linear;
+        &:hover {
+          opacity: .85;
+        }
+        svg {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+  &--white {
+    ul {
+      li {
+        a {
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}

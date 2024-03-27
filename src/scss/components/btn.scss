@@ -1,0 +1,123 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 5.6rem;
+  border-radius: 3.2rem;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+  font-weight: 700;
+  transition: background-color .2s linear, color .2s linear;
+
+  &--transparent {
+    &_orange {
+      color: #FFCC34;
+      border: 1px solid #FFCC34;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+
+      &:hover {
+        background-color: #FFCC34;
+        color: #1C1A19;
+      }
+    }
+  }
+
+  &--orange {
+    background-color: #FFCC34;
+
+    &:hover {
+      background-color: #ffed34;
+    }
+  }
+}
+
+.headerBtn {
+  height: 4.8rem;
+  font-weight: 700;
+  @media(max-width: 575px){
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.howBtn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  @media(max-width: 575px) {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media(max-width: 365px) {
+    font-size: 1.6rem;
+  }
+}
+
+.salarySlideBtn {
+  display: none;
+  margin-top: 2.2rem;
+
+  @media(max-width: 1199px) {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  @media(max-width: 355px) {
+    font-size: 1.6rem;
+  }
+}
+
+.budgetBtn {
+  margin-top: 2.4rem;
+  min-width: 31rem;
+}
+
+.modalBtn {
+  margin-top: 2.4rem;
+}
+
+.introVideoButton {
+  position: fixed;
+  right: 3rem;
+  bottom: 70px;
+  background-color: #fff;
+  border-radius: 10px; 
+  z-index: 3;
+  box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.15);
+  transition: background .2s linear;
+  &.hidden {
+    display: none;
+  }
+  &:hover {
+    @media(max-width: 767px){
+      background: rgba($color: #fff, $alpha: .4);
+    }
+  }
+  @media(max-width: 1400px){
+    bottom: 30px;
+  }
+  @media(max-width: 991px){
+    position: unset;
+    margin-top: 3rem;
+    background: rgba($color: #fff, $alpha: .2);
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+    border-radius: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  @media(max-width: 575px){
+    width: 100%;
+    max-width: calc(100% - 38px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

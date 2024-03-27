@@ -1,0 +1,129 @@
+// modal
+.modal {
+
+  &Title {
+    font-size: 3.2rem;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+    color: #0E1316;
+    max-width: 29rem;
+
+    @media(max-width: 991px) {
+      font-size: 2.4rem;
+      max-width: 22rem;
+    }
+  }
+
+  &Content {
+    border-radius: 2rem;
+    background-color: #fff;
+    padding: 4rem;
+    width: 100%;
+    position: relative;
+    border: none;
+
+    @media(max-width: 767px) {
+      padding: 3rem;
+    }
+  }
+
+  .btn-close {
+    background: none;
+    opacity: 1;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+
+    @media(max-width: 767px) {
+      right: 1rem;
+      top: .5rem;
+    }
+  }
+
+  &-dialog {
+    max-width: 52rem;
+  }
+
+  .formInput {
+    border: 1px solid #FFCC34;
+  }
+
+  .formText {
+    border: 1px solid #FFCC34;
+    border-radius: 2rem;
+    width: 100%;
+  }
+
+  .agreement {
+    color: #040404;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 2.4rem;
+
+    a {
+      display: inline;
+      border-bottom: 1px solid #040404;
+    }
+  }
+
+  .inputW {
+    margin-bottom: 1.6rem;
+  }
+}
+
+#modal-thanks {
+  .modalTitle {
+    max-width: 31rem;
+  }
+
+}
+
+.modalThanksImg {
+  max-width: 40rem;
+}
+
+.modal-city {
+  .modal-dialog {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-content {
+    padding: 24px 24px 24px 19px;
+    box-shadow: 0 35px 35px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border: 2px solid #ffcc34;
+    border-radius: 20px;
+  }
+  .modalTitle {
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    strong {
+      font-weight: 700;
+    }
+  }
+  .btn-close {
+    width: 30px;
+    height: 30px;
+    right: 9px;
+    top: 9px;
+  }
+  &-btn {
+    display: flex;
+    column-gap: 8px;
+    .button {
+      background: #f2f2f2;
+      height: 47px;
+      font-size: 1.6rem;
+      &:hover {
+        background-color: #ffcc34;
+      }
+    }
+  }
+}

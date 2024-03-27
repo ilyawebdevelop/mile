@@ -1,0 +1,180 @@
+.about {
+  padding-bottom: 0;
+  padding-top: 5rem;
+  background: url('@img/about/about-bg.jpg') no-repeat center center / cover;
+
+  @media(max-width: 991px) {
+    background: none;
+    padding-top: 0;
+  }
+
+  .container {
+    @media(max-width: 575px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &Content {
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    max-width: 37rem;
+    margin-left: auto;
+    background-color: #fff;
+    border: 2px solid #FFCC34;
+    border-radius: 2rem;
+
+    @media(max-width: 1400px) {
+      right: -120px;
+    }
+
+    @media(max-width: 1199px) {
+      right: -150px;
+    }
+
+    // background-color: #fff; 
+    @media(max-width: 767px) {
+      max-width: 39rem;     
+      right: -170px;
+    }
+
+    @media(max-width: 575px) {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 15px;
+      left: 15px;
+      top: 250px;
+    }
+    @media(max-width: 440px){
+      top: 200px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -33px;
+      top: 50%;
+      width: 37px;
+      height: 40px;
+      background: url('@img/icons/rectLg.svg') no-repeat center center / contain;
+      z-index: 0;
+
+      @media(max-width: 575px) {
+        left: -20px;
+        right: 0;
+        margin: auto;
+        top: -30px;
+        transform: rotate(90deg);
+      }
+    }
+
+    &Inner {
+      background-color: #fff;
+      padding: 2.6rem 2.2rem 2.5rem 4rem;
+      position: relative;
+      z-index: 1;
+      border-radius: 2rem;
+      p {
+        line-height: 3rem;
+      }
+    }
+  }
+
+  &Img {
+    &W {
+      position: relative;
+      right: 11rem;
+
+      @media(max-width: 575px) {
+        padding-bottom: 32vw;
+        right: unset;
+      }
+      @media(max-width: 480px){
+        padding-bottom: 45vw;
+      }
+      @media(max-width: 460px){
+        padding-bottom: 60vw;
+      }
+      @media(max-width: 395px){
+        padding-bottom: 90vw;
+      }
+      @media(max-width: 355px){
+        padding-bottom: 110vw;
+      }
+    }
+  }
+
+  &Descr {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: .8rem;
+    color: #0e1316;
+  }
+
+  &Name {
+    font-weight: 700;
+    margin-top: .8rem;
+    display: block;
+  }
+
+  &List {
+    padding-top: 5rem;
+    position: relative;
+    z-index: 1;
+
+    @media(max-width: 991px) {
+      padding-top: 2rem;
+      padding-left: 1.5rem;
+    }
+
+    @media(max-width: 575px) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  &Item {
+    margin-bottom: 5rem;
+
+    @media(max-width: 1199px) {
+      margin-bottom: 3.4rem;
+    }
+
+    &Count {
+      font-size: 3.8rem;
+      line-height: normal;
+      font-weight: 900;
+      color: #0E1316;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.aboutBg {
+  position: relative;
+
+  @media(max-width: 991px) {
+    padding-top: 5rem;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -35rem;
+    width: calc(100% + 135rem);
+    height: calc(100% - 10rem);
+    top: 0;
+    background: url('@img/about/about-bg.jpg') no-repeat left center / cover;
+    display: none;
+
+    @media(max-width: 991px) {
+      display: block;
+    }
+
+    @media(max-width: 575px) {
+      left: -33rem;
+    }
+  }
+}
