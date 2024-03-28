@@ -2,7 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
 import AOS from "./../../node_modules/aos/dist/aos.js";
 import "./modules/inputmask.min.js";
-import "./modules/select2.min.js";
+// import "./modules/select2.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import './components.js';
@@ -17,11 +17,11 @@ let inputs = document.querySelectorAll('input[type="tel"]');
 let im = new Inputmask('+7 (999) 999-99-99');
 im.mask(inputs);
 
-$(document).ready(function() {
+// $(document).ready(function() {
   // $('.formSelectCityHeader').select2();
   // $('.formSelectCityLg').select2();
   // $('.formSelectCitySm').select2();
-});
+// });
 
 // Import swiper
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
