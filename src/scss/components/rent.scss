@@ -20,6 +20,12 @@
   &Slide {
     border-radius: 2rem;
     overflow: hidden;
+    height: auto;
+    display: grid;
+    grid-template-rows: 30rem auto;
+    @media(max-width: 575px){
+      grid-template-rows: 45vw auto;
+    }
     &Content {
       padding-top: 2.4rem;
       padding-left: 4rem;

@@ -27,7 +27,7 @@
           <img class="logo-white" src="img/admin/header/logo-white.svg" alt="logo">
         </a>
         <div class="selectW">
-          <select name="selectCity" id="selectCity" class="formSelect">
+          <select name="selectCity" id="selectCity" class="formSelect formSelectCityHeader">
             <option value="irkutsk">Иркутск</option>
             <option value="ulan">Улан-Удэ</option>
             <option value="other">Другой</option>
@@ -80,7 +80,7 @@
       <img src="img/admin/header/logo-white.svg" alt="logo">
     </a>
     <div class="selectW d-block d-sm-none">
-      <select name="selectCity" id="selectCity" class="formSelect">
+      <select name="selectCity_1" id="selectCity_1" class="formSelect formSelectCityLg">
         <option value="irkutsk">Иркутск</option>
         <option value="ulan">Улан-Удэ</option>
         <option value="other">Другой</option>
@@ -99,7 +99,7 @@
       <li><a href="#">Контакты </a></li>
     </ul>
     <div class="selectW d-none d-sm-block">
-      <select name="selectCity" id="selectCity" class="formSelect">
+      <select name="selectCity_2" id="selectCity_2" class="formSelect formSelectCitySm">
         <option value="irkutsk">Иркутск</option>
         <option value="ulan">Улан-Удэ</option>
         <option value="other">Другой</option>
@@ -142,7 +142,7 @@
   <div class="container">
     <div class="introW">
       <div class="introContent">
-        <div class="h1 text-white text-center text-md-start">
+        <div class="h1 text-white text-center text-md-start" data-aos="zoom-out-right" data-aos-duration="1000">
           Пассивный <span class="text-white d-none d-md-inline-block">доход</span>
           <div class="d-flex align-items-center flex-column flex-md-row">
             <span class="d-flex gap-2"><span class="text-white d-block d-md-none">доход </span> на авто</span>
@@ -168,7 +168,6 @@
       </div><!-- /introContent -->
       <div class="introMobileImgW d-block d-lg-none">
         <img src="img/intro/car-image.png" alt="car" class="carMobile">
-
       </div>
       <button class="introVideoButton">
         <div class="introVideoButtonImg">
@@ -188,7 +187,7 @@
 
     </div>
 
-    <div class="introAdvs">
+    <div class="introAdvs" data-aos="fade-zoom-in" data-aos-duration="1000">
       <div class="row">
         <div class="col-md-6 col-xl-3">
           <div class="introAdv">
@@ -217,7 +216,7 @@
       </div>
 
     </div><!-- /introAdvs -->
-    <img src="img/intro/car-full.png" alt="car" class="car">
+    <img src="img/intro/car-full.png" alt="car" class="car" data-aos="zoom-out-left" data-aos-duration="1000">
   </div>
 
 
@@ -226,12 +225,12 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5">
-        <div class="howTitle h2 d-block d-lg-none">
+        <div class="howTitle h2 d-block d-lg-none" data-aos="fade-zoom-in" data-aos-duration="1000">
           Как формируется доход?
         </div>
         <img class="mb-4 mb-lg-0" src="img/how/image.svg" alt="image">
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-7" data-aos="fade-zoom-in" data-aos-duration="1000">
         <div class="howTitle h2 d-none d-lg-block">
           Как формируется доход?
         </div>
@@ -257,9 +256,10 @@
   </div>
 </section>
 			<section class="salary">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
 
-    <div class="sectionHead salaryHead d-flex flex-wrap gap-4 align-items-center justify-content-center justify-content-md-between">
+    <div
+      class="sectionHead salaryHead d-flex flex-wrap gap-4 align-items-center justify-content-center justify-content-md-between">
       <div class="h2 text-white">
         Сколько вы будете зарабатывать
       </div>
@@ -284,16 +284,18 @@
           <div class="salarySlideImg">
             <img src="img/admin/salary/sal-1.jpg" alt="image">
           </div>
-          <div class="salarySlideContent">
-            <div class="salarySlideTitle">
-              Toyota Passo
-            </div>
-            <div class="salarySlideType">
-              Хэтчбек 
-            </div>
-            <div class="salarySlidePrice d-flex">
-              до 26 000
-              <span>₽</span>
+          <div class="salarySlideContent justify-content-between">
+            <div class="d-block d-flex flex-column align-items-center gap-2">
+              <div class="salarySlideTitle">
+                Toyota Passo
+              </div>
+              <div class="salarySlideType">
+                Хэтчбек 
+              </div>
+              <div class="salarySlidePrice d-flex">
+                до 26 000
+                <span>₽</span>
+              </div>
             </div>
             <button class="button button--orange salarySlideBtn">
               Начать зарабатывать
@@ -305,16 +307,18 @@
           <div class="salarySlideImg">
             <img src="img/admin/salary/sal-2.jpg" alt="image">
           </div>
-          <div class="salarySlideContent">
-            <div class="salarySlideTitle">
-              Volkswagen Polo Volkswagen Polo
-            </div>
-            <div class="salarySlideType">
-              Хэтчбек  Хэтчбек 
-            </div>
-            <div class="salarySlidePrice d-flex">
-              ддо 38 000
-              <span>₽</span>
+          <div class="salarySlideContent justify-content-between">
+            <div class="d-block d-flex flex-column align-items-center gap-2">
+              <div class="salarySlideTitle">
+                Volkswagen Polo Volkswagen Polo
+              </div>
+              <div class="salarySlideType">
+                Хэтчбек  Хэтчбек 
+              </div>
+              <div class="salarySlidePrice d-flex">
+                ддо 38 000
+                <span>₽</span>
+              </div>
             </div>
             <button class="button button--orange salarySlideBtn">
               Начать зарабатывать
@@ -326,16 +330,18 @@
           <div class="salarySlideImg">
             <img src="img/admin/salary/sal-3.jpg" alt="image">
           </div>
-          <div class="salarySlideContent">
-            <div class="salarySlideTitle">
-              Volkswagen Polo
-            </div>
-            <div class="salarySlideType">
-              Хэтчбек 
-            </div>
-            <div class="salarySlidePrice d-flex">
-              до 38 000
-              <span>₽</span>
+          <div class="salarySlideContent justify-content-between">
+            <div class="d-block d-flex flex-column align-items-center gap-2">
+              <div class="salarySlideTitle">
+                Volkswagen Polo
+              </div>
+              <div class="salarySlideType">
+                Хэтчбек 
+              </div>
+              <div class="salarySlidePrice d-flex">
+                до 38 000
+                <span>₽</span>
+              </div>
             </div>
             <button class="button button--orange salarySlideBtn">
               Начать зарабатывать
@@ -347,16 +353,18 @@
           <div class="salarySlideImg">
             <img src="img/admin/salary/sal-4.jpg" alt="image">
           </div>
-          <div class="salarySlideContent">
-            <div class="salarySlideTitle">
-              Volkswagen Jetta
-            </div>
-            <div class="salarySlideType">
-              Хэтчбек 
-            </div>
-            <div class="salarySlidePrice d-flex">
-              до 34 000
-              <span>₽</span>
+          <div class="salarySlideContent justify-content-between">
+            <div class="d-block d-flex flex-column align-items-center gap-2">
+              <div class="salarySlideTitle">
+                Volkswagen Jetta
+              </div>
+              <div class="salarySlideType">
+                Хэтчбек 
+              </div>
+              <div class="salarySlidePrice d-flex">
+                до 34 000
+                <span>₽</span>
+              </div>
             </div>
             <button class="button button--orange salarySlideBtn">
               Начать зарабатывать
@@ -368,17 +376,19 @@
           <div class="salarySlideImg">
             <img src="img/admin/salary/sal-1.jpg" alt="image">
           </div>
-          <div class="salarySlideContent">
-            <div class="salarySlideTitle">
-              Toyota Passo
-            </div>
-            <div class="salarySlideType">
-              Хэтчбек 
-            </div>
-            <div class="salarySlidePrice d-flex">
-              до 26 000
-              <span>₽</span>
-            </div>
+          <div class="salarySlideContent justify-content-between">
+            <div class="d-block d-flex flex-column align-items-center gap-2">
+              <div class="salarySlideTitle">
+                Toyota Passo
+              </div>
+              <div class="salarySlideType">
+                Хэтчбек 
+              </div>
+              <div class="salarySlidePrice d-flex">
+                до 26 000
+                <span>₽</span>
+              </div>
+            </div>           
             <button class="button button--orange salarySlideBtn">
               Начать зарабатывать
             </button>
@@ -393,15 +403,15 @@
 			<section class="budget">
   <div class="container">
 
-    <div class="sectionHead">
+    <div class="sectionHead" data-aos="fade-zoom-in" data-aos-duration="1000">
       <h2 class="h2">
         У вас нет автомобиля, но <span> есть подходящий бюджет</span> на покупку?
       </h2>
     </div><!-- /sectionHead -->
 
-    <div class="row budgetRow align-items-center">
+    <div class="row budgetRow align-items-center" data-aos="fade-zoom-in" data-aos-duration="1000">
       <div class="col-lg-6 budgetItem order-2 order-lg-1">
-        <div class="h3 blockTitle d-none d-lg-block">
+        <div class="h3 blockTitle d-none d-lg-flex">
           Пакет услуг <span>«Миля Инвест»</span>
         </div>
         <ul class="budgetList">
@@ -422,21 +432,21 @@
         <button class="button button--orange budgetBtn">Оставить заявку</button>
       </div>
       <div class="col-lg-6 image-right order-1 order-lg-2">
-        <div class="h3 blockTitle d-block d-lg-none">
+        <div class="h3 blockTitle d-flex d-lg-none">
           Пакет услуг <span>«Миля Инвест»</span>
         </div>
         <img src="img/admin/budget/image-1.jpg" alt="image" class="budgetImg">
       </div>
     </div><!-- /budgetRow -->
-    <div class="row budgetRow align-items-center">
+    <div class="row budgetRow align-items-center" data-aos="fade-zoom-in" data-aos-duration="1000">
       <div class="col-lg-6 image-left">
-        <div class="h3 blockTitle d-block d-lg-none">
+        <div class="h3 blockTitle d-flex d-lg-none">
           Даете денежные средства в <span>займ под %</span>
         </div>
         <img src="img/admin/budget/image-2.jpg" alt="image" class="budgetImg">
       </div>
       <div class="col-lg-6 budgetItem">
-        <div class="h3 blockTitle d-none d-lg-block">
+        <div class="h3 blockTitle d-none d-lg-flex">
           Даете денежные средства в <span>займ под %</span>
         </div>
         <ul class="budgetList">
@@ -453,9 +463,9 @@
         <button class="button button--orange budgetBtn">Оставить заявку</button>
       </div>
     </div>
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-aos="fade-zoom-in" data-aos-duration="1000">
       <div class="col-lg-6 order-2 order-lg-1">
-        <div class="h3 blockTitle d-none d-lg-block">
+        <div class="h3 blockTitle d-none d-lg-flex">
           Самостоятельно <span class="line-long">приобретаете автомобиль</span>
         </div>
         <ul class="budgetList">
@@ -475,7 +485,7 @@
         <button class="button button--orange budgetBtn">Оставить заявку</button>
       </div>
       <div class="col-lg-6 image-right order-1 order-lg-2">
-        <div class="h3 blockTitle d-block d-lg-none">
+        <div class="h3 blockTitle d-flex d-lg-none">
           Самостоятельно <span class="line-long">приобретаете автомобиль</span>
         </div>
         <img src="img/admin/budget/image-3.jpg" alt="image" class="budgetImg">
@@ -485,7 +495,7 @@
   </div>
 </section>
 			<section class="calc">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
 
     <div class="sectionHead">
       <h2 class="h2 text-white calcTitle">
@@ -534,7 +544,7 @@
 </section>
 			<section class="about">
   <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-zoom-in" data-aos-duration="1000">
       <div class="col-lg-7 order-3 order-lg-1">
         <h2 class="h2 d-none d-lg-block">
           О нас
@@ -601,7 +611,7 @@
   </div>
 </section>
 			<section class="team teamSect">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
 
     <div class="sectionHead teamHead d-flex flex-wrap gap-4 align-items-center justify-content-between">
       <div class="h2">
@@ -690,14 +700,14 @@
   </div>
 </section>
 			<div class="faqTitleSmW d-block d-md-none">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
     <h2 class="h2 text-center mb-4 pb-4">
       Часто задаваемые вопросы
     </h2>
   </div>
 </div>
 <section class="faq">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
 
     <div class="sectionHead d-none d-md-flex">
       <h2 class="h2 text-center">
@@ -781,7 +791,7 @@
   </div>
 </section>
 			<section class="rent rentSect">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
 
     <div class="sectionHead d-flex flex-wrap gap-4 text-center text-md-start justify-content-center justify-content-md-between">
       <h2 class="h2 text-white rentTitle">
@@ -849,7 +859,7 @@
   </div>
 </section>
 			<section class="exp expSect">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
 
     <div class="sectionHead expHead d-flex flex-wrap gap-4 align-items-center text-center text-md-start justify-content-center justify-content-md-between">
       <div class="h2">
@@ -990,7 +1000,7 @@
   </div>
 </section>
 			<section class="order">
-  <div class="container">
+  <div class="container" data-aos="fade-zoom-in" data-aos-duration="1000">
     <div class="orderW">
 
       <div class="sectionHead orderHead">
@@ -1030,7 +1040,7 @@
 			<section class="mapSect">
 
   <div class="mapW">
-    <div class="map" id="map">
+    <div class="map" id="map" data-aos="fade-zoom-in" data-aos-duration="1000">
       <div class="container">
         <iframe
           src="https://yandex.by/map-widget/v1/?ll=104.299355%2C52.306696&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExNzkzMxIc0KDQvtGB0YHQuNGPLCDQmNGA0LrRg9GC0YHQuiIKDayP0EIViihRQg%2C%2C&z=13.46"
@@ -1125,7 +1135,7 @@
         </div>
         <div class="inputW">
           <textarea class="formText" name="modalTextOrder" id="modalTextOrder" cols="30" rows="10"
-            placeholder="Интересующий вас вопрос"></textarea>
+            placeholder="Комментарий"></textarea>
         </div>
         <div class="agreement">
           Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
@@ -1158,7 +1168,7 @@
         </div>
         <div class="inputW">
           <textarea class="formText" name="modalTextHow" id="modalTextHow" cols="30" rows="10"
-            placeholder="Интересующий вас вопрос"></textarea>
+            placeholder="Комментарий"></textarea>
         </div>
         <div class="agreement">
           Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
@@ -1191,7 +1201,7 @@
 </div>
 
 <!-- city -->
-<div class="modal fade modal-city" id="modal-city" tabindex="-1" aria-labelledby="exampleModalLabel_2"
+<div class="modal fade modal-city" id="modal-city" tabindex="-1" aria-labelledby="exampleModalLabel_3"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <form class="modalContent modal-content" action="#">
@@ -1201,9 +1211,35 @@
       <div class="modal-city-btn">
         <button class="button">Да</button>
         <button class="button">Нет</button>
-      </div>   
-    
+      </div>
+
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-city">
+        <img src="img/icons/btn-close.svg" alt="icon">
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- city-change -->
+<div class="modal fade modal-city" id="modal-change" tabindex="-1" aria-labelledby="exampleModalLabel_4"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="modalContent modal-content" action="#">
+
+      <div class="modalTitle">Выберите город</div>
+
+      <div class="modalInputW">
+        <div class="modalInput">
+          <input type="radio" id="city_1" name="change_city" checked>
+          <label for="city_1">Улан-Удэ</label>
+        </div>
+        <div class="modalInput">
+          <input type="radio" id="city_2" name="change_city">
+          <label for="city_2">Улан-Удэ</label>
+        </div>
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-change">
         <img src="img/icons/btn-close.svg" alt="icon">
       </button>
     </form>

@@ -1,6 +1,8 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
-import "./modules/fslightbox.js";
+import AOS from "./../../node_modules/aos/dist/aos.js";
+import "./modules/inputmask.min.js";
+import "./modules/select2.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import './components.js';
@@ -9,6 +11,16 @@ flsFunctions.isWebp();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
+});
+
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs);
+
+$(document).ready(function() {
+  // $('.formSelectCityHeader').select2();
+  // $('.formSelectCityLg').select2();
+  // $('.formSelectCitySm').select2();
 });
 
 // Import swiper
@@ -137,8 +149,12 @@ let modalThanks = new bootstrap.Modal(thanksModal)
 // modal init city
 var cityModal = document.getElementById('modal-city');
 let modalCity = new bootstrap.Modal(cityModal)
-modalCity.show();
+// modalCity.show();
 
+// modal init change city
+var cityChangeModal = document.getElementById('modal-change');
+let modalCityChange = new bootstrap.Modal(cityChangeModal)
+modalCityChange.show();
 
 let introVideoButtonClose = document.querySelector('.introVideoButtonClose');
 let introVideoButton = document.querySelector('.introVideoButton');

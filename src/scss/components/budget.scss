@@ -41,9 +41,14 @@
   }
   .blockTitle{
     margin-bottom: 2.2rem;
+    // display: flex!important;
+    column-gap: .7rem;
+    flex-wrap: wrap;
     span {
       padding-bottom: 5px;
       background: url('@img/icons/block-title.svg') no-repeat bottom center;
+      display: block;
+      width: fit-content;
       &.line-long {
         background: url('@img/icons/block-title-long.svg') no-repeat bottom center;
       }

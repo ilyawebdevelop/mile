@@ -15,7 +15,7 @@
         </div>
         <div class="inputW">
           <textarea class="formText" name="modalTextOrder" id="modalTextOrder" cols="30" rows="10"
-            placeholder="Интересующий вас вопрос"></textarea>
+            placeholder="Комментарий"></textarea>
         </div>
         <div class="agreement">
           Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
@@ -48,7 +48,7 @@
         </div>
         <div class="inputW">
           <textarea class="formText" name="modalTextHow" id="modalTextHow" cols="30" rows="10"
-            placeholder="Интересующий вас вопрос"></textarea>
+            placeholder="Комментарий"></textarea>
         </div>
         <div class="agreement">
           Нажимая на кнопку, вы соглашаетесь <a href="#">условиями передачи информации</a> и <a
@@ -81,7 +81,7 @@
 </div>
 
 <!-- city -->
-<div class="modal fade modal-city" id="modal-city" tabindex="-1" aria-labelledby="exampleModalLabel_2"
+<div class="modal fade modal-city" id="modal-city" tabindex="-1" aria-labelledby="exampleModalLabel_3"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <form class="modalContent modal-content" action="#">
@@ -91,9 +91,35 @@
       <div class="modal-city-btn">
         <button class="button">Да</button>
         <button class="button">Нет</button>
-      </div>   
-    
+      </div>
+
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-city">
+        <img src="@img/icons/btn-close.svg" alt="icon">
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- city-change -->
+<div class="modal fade modal-city" id="modal-change" tabindex="-1" aria-labelledby="exampleModalLabel_4"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="modalContent modal-content" action="#">
+
+      <div class="modalTitle">Выберите город</div>
+
+      <div class="modalInputW">
+        <div class="modalInput">
+          <input type="radio" id="city_1" name="change_city" checked>
+          <label for="city_1">Улан-Удэ</label>
+        </div>
+        <div class="modalInput">
+          <input type="radio" id="city_2" name="change_city">
+          <label for="city_2">Улан-Удэ</label>
+        </div>
+      </div>
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-change">
         <img src="@img/icons/btn-close.svg" alt="icon">
       </button>
     </form>
